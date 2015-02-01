@@ -19,3 +19,9 @@ main = div [
     [text "this is an example" ]
 
 ```
+
+Primed variants of most functions are provided for use with my style effects
+library.
+
+* I will add more stuff as I have time; in particular I want to try to get
+animation, transition, and transformation bindings.

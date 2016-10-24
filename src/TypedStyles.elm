@@ -32,11 +32,11 @@ animation, transition, and transformation bindings.
 
 -}
 
-import Html(..)
-import Html.Attributes(..)
-import List(..)
-import Color(..)
-import String(join)
+import Html            exposing (..)
+import Html.Attributes exposing (..)
+import List            exposing (..)
+import Color           exposing (..)
+import String          exposing (join)
 
 type alias CSSValue = String
 type alias CSSKey   = String

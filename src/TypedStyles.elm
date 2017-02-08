@@ -166,11 +166,11 @@ serializeLength x = case x of
 padding : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 padding x f = ("padding", serializeLength (f x))
 
-{-| padding' - shorthand for providing lengths to padding for use with animation.
- Example: padding' 10 px 20 px
+{-| padding_ - shorthand for providing lengths to padding for use with animation.
+ Example: padding_ 10 px 20 px
 -}
-padding' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-padding' x f y g = ("padding", serializeLength (f x), serializeLength (g y))
+padding_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+padding_ x f y g = ("padding", serializeLength (f x), serializeLength (g y))
 
 
 {-| paddingTop - shorthand for providing lengths to padding-top.
@@ -179,11 +179,11 @@ padding' x f y g = ("padding", serializeLength (f x), serializeLength (g y))
 paddingTop : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 paddingTop x f = ("padding-top", serializeLength (f x))
 
-{-| paddingTop' - shorthand for providing lengths to padding-top for use with animation.
- Example: paddingTop' 10 px 20 px
+{-| paddingTop_ - shorthand for providing lengths to padding-top for use with animation.
+ Example: paddingTop_ 10 px 20 px
 -}
-paddingTop' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-paddingTop' x f y g = ("padding-top", serializeLength (f x), serializeLength (g y))
+paddingTop_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+paddingTop_ x f y g = ("padding-top", serializeLength (f x), serializeLength (g y))
 
 
 {-| paddingBottom - shorthand for providing lengths to padding-bottom.
@@ -192,11 +192,11 @@ paddingTop' x f y g = ("padding-top", serializeLength (f x), serializeLength (g 
 paddingBottom : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 paddingBottom x f = ("padding-bottom", serializeLength (f x))
 
-{-| paddingBottom' - shorthand for providing lengths to padding-bottom for use with animation.
- Example: paddingBottom' 10 px 20 px
+{-| paddingBottom_ - shorthand for providing lengths to padding-bottom for use with animation.
+ Example: paddingBottom_ 10 px 20 px
 -}
-paddingBottom' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-paddingBottom' x f y g = ("padding-bottom", serializeLength (f x), serializeLength (g y))
+paddingBottom_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+paddingBottom_ x f y g = ("padding-bottom", serializeLength (f x), serializeLength (g y))
 
 
 {-| paddingLeft - shorthand for providing lengths to padding-left.
@@ -205,11 +205,11 @@ paddingBottom' x f y g = ("padding-bottom", serializeLength (f x), serializeLeng
 paddingLeft : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 paddingLeft x f = ("padding-left", serializeLength (f x))
 
-{-| paddingLeft' - shorthand for providing lengths to padding-left for use with animation.
- Example: paddingLeft' 10 px 20 px
+{-| paddingLeft_ - shorthand for providing lengths to padding-left for use with animation.
+ Example: paddingLeft_ 10 px 20 px
 -}
-paddingLeft' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-paddingLeft' x f y g = ("padding-left", serializeLength (f x), serializeLength (g y))
+paddingLeft_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+paddingLeft_ x f y g = ("padding-left", serializeLength (f x), serializeLength (g y))
 
 
 {-| paddingRight - shorthand for providing lengths to padding-right.
@@ -218,11 +218,11 @@ paddingLeft' x f y g = ("padding-left", serializeLength (f x), serializeLength (
 paddingRight : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 paddingRight x f = ("padding-right", serializeLength (f x))
 
-{-| paddingRight' - shorthand for providing lengths to padding-right for use with animation.
- Example: paddingRight' 10 px 20 px
+{-| paddingRight_ - shorthand for providing lengths to padding-right for use with animation.
+ Example: paddingRight_ 10 px 20 px
 -}
-paddingRight' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-paddingRight' x f y g = ("padding-right", serializeLength (f x), serializeLength (g y))
+paddingRight_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+paddingRight_ x f y g = ("padding-right", serializeLength (f x), serializeLength (g y))
 
 
 {-| margin - shorthand for providing lengths to margin.
@@ -231,11 +231,11 @@ paddingRight' x f y g = ("padding-right", serializeLength (f x), serializeLength
 margin : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 margin x f = ("margin", serializeLength (f x))
 
-{-| margin' - shorthand for providing lengths to margin for use with animation.
- Example: margin' 10 px 20 px
+{-| margin_ - shorthand for providing lengths to margin for use with animation.
+ Example: margin_ 10 px 20 px
 -}
-margin' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-margin' x f y g = ("margin", serializeLength (f x), serializeLength (g y))
+margin_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+margin_ x f y g = ("margin", serializeLength (f x), serializeLength (g y))
 
 
 {-| marginTop - shorthand for providing lengths to margin-top.
@@ -244,11 +244,11 @@ margin' x f y g = ("margin", serializeLength (f x), serializeLength (g y))
 marginTop : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 marginTop x f = ("margin-top", serializeLength (f x))
 
-{-| marginTop' - shorthand for providing lengths to margin-top for use with animation.
- Example: marginTop' 10 px 20 px
+{-| marginTop_ - shorthand for providing lengths to margin-top for use with animation.
+ Example: marginTop_ 10 px 20 px
 -}
-marginTop' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-marginTop' x f y g = ("margin-top", serializeLength (f x), serializeLength (g y))
+marginTop_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+marginTop_ x f y g = ("margin-top", serializeLength (f x), serializeLength (g y))
 
 
 {-| marginBottom - shorthand for providing lengths to margin-bottom.
@@ -257,11 +257,11 @@ marginTop' x f y g = ("margin-top", serializeLength (f x), serializeLength (g y)
 marginBottom : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 marginBottom x f = ("margin-bottom", serializeLength (f x))
 
-{-| marginBottom' - shorthand for providing lengths to margin-bottom for use with animation.
- Example: marginBottom' 10 px 20 px
+{-| marginBottom_ - shorthand for providing lengths to margin-bottom for use with animation.
+ Example: marginBottom_ 10 px 20 px
 -}
-marginBottom' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-marginBottom' x f y g = ("margin-bottom", serializeLength (f x), serializeLength (g y))
+marginBottom_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+marginBottom_ x f y g = ("margin-bottom", serializeLength (f x), serializeLength (g y))
 
 
 {-| marginLeft - shorthand for providing lengths to margin-left.
@@ -270,11 +270,11 @@ marginBottom' x f y g = ("margin-bottom", serializeLength (f x), serializeLength
 marginLeft : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 marginLeft x f = ("margin-left", serializeLength (f x))
 
-{-| marginLeft' - shorthand for providing lengths to margin-left for use with animation.
- Example: marginLeft' 10 px 20 px
+{-| marginLeft_ - shorthand for providing lengths to margin-left for use with animation.
+ Example: marginLeft_ 10 px 20 px
 -}
-marginLeft' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-marginLeft' x f y g = ("margin-left", serializeLength (f x), serializeLength (g y))
+marginLeft_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+marginLeft_ x f y g = ("margin-left", serializeLength (f x), serializeLength (g y))
 
 
 {-| marginRight - shorthand for providing lengths to margin-right.
@@ -283,11 +283,11 @@ marginLeft' x f y g = ("margin-left", serializeLength (f x), serializeLength (g 
 marginRight : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 marginRight x f = ("margin-right", serializeLength (f x))
 
-{-| marginRight' - shorthand for providing lengths to margin-right for use with animation.
- Example: marginRight' 10 px 20 px
+{-| marginRight_ - shorthand for providing lengths to margin-right for use with animation.
+ Example: marginRight_ 10 px 20 px
 -}
-marginRight' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-marginRight' x f y g = ("margin-right", serializeLength (f x), serializeLength (g y))
+marginRight_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+marginRight_ x f y g = ("margin-right", serializeLength (f x), serializeLength (g y))
 
 
 {-| fontSize - shorthand for providing lengths to font-size.
@@ -296,11 +296,11 @@ marginRight' x f y g = ("margin-right", serializeLength (f x), serializeLength (
 fontSize : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 fontSize x f = ("font-size", serializeLength (f x))
 
-{-| fontSize' - shorthand for providing lengths to font-size for use with animation.
- Example: fontSize' 10 px 20 px
+{-| fontSize_ - shorthand for providing lengths to font-size for use with animation.
+ Example: fontSize_ 10 px 20 px
 -}
-fontSize' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-fontSize' x f y g = ("font-size", serializeLength (f x), serializeLength (g y))
+fontSize_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+fontSize_ x f y g = ("font-size", serializeLength (f x), serializeLength (g y))
 
 
 {-| height - shorthand for providing lengths to height.
@@ -309,11 +309,11 @@ fontSize' x f y g = ("font-size", serializeLength (f x), serializeLength (g y))
 height : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 height x f = ("height", serializeLength (f x))
 
-{-| height' - shorthand for providing lengths to height for use with animation.
- Example: height' 10 px 20 px
+{-| height_ - shorthand for providing lengths to height for use with animation.
+ Example: height_ 10 px 20 px
 -}
-height' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-height' x f y g = ("height", serializeLength (f x), serializeLength (g y))
+height_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+height_ x f y g = ("height", serializeLength (f x), serializeLength (g y))
 
 
 {-| minHeight - shorthand for providing lengths to min-height.
@@ -322,11 +322,11 @@ height' x f y g = ("height", serializeLength (f x), serializeLength (g y))
 minHeight : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 minHeight x f = ("min-height", serializeLength (f x))
 
-{-| minHeight' - shorthand for providing lengths to min-height for use with animation.
- Example: minHeight' 10 px 20 px
+{-| minHeight_ - shorthand for providing lengths to min-height for use with animation.
+ Example: minHeight_ 10 px 20 px
 -}
-minHeight' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-minHeight' x f y g = ("min-height", serializeLength (f x), serializeLength (g y))
+minHeight_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+minHeight_ x f y g = ("min-height", serializeLength (f x), serializeLength (g y))
 
 
 {-| maxHeight - shorthand for providing lengths to max-height.
@@ -335,11 +335,11 @@ minHeight' x f y g = ("min-height", serializeLength (f x), serializeLength (g y)
 maxHeight : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 maxHeight x f = ("max-height", serializeLength (f x))
 
-{-| maxHeight' - shorthand for providing lengths to max-height for use with animation.
- Example: maxHeight' 10 px 20 px
+{-| maxHeight_ - shorthand for providing lengths to max-height for use with animation.
+ Example: maxHeight_ 10 px 20 px
 -}
-maxHeight' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-maxHeight' x f y g = ("max-height", serializeLength (f x), serializeLength (g y))
+maxHeight_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+maxHeight_ x f y g = ("max-height", serializeLength (f x), serializeLength (g y))
 
 
 {-| width - shorthand for providing lengths to width.
@@ -348,11 +348,11 @@ maxHeight' x f y g = ("max-height", serializeLength (f x), serializeLength (g y)
 width : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 width x f = ("width", serializeLength (f x))
 
-{-| width' - shorthand for providing lengths to width for use with animation.
- Example: width' 10 px 20 px
+{-| width_ - shorthand for providing lengths to width for use with animation.
+ Example: width_ 10 px 20 px
 -}
-width' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-width' x f y g = ("width", serializeLength (f x), serializeLength (g y))
+width_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+width_ x f y g = ("width", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderTopWidth - shorthand for providing lengths to border-top-width.
@@ -361,11 +361,11 @@ width' x f y g = ("width", serializeLength (f x), serializeLength (g y))
 borderTopWidth : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderTopWidth x f = ("border-top-width", serializeLength (f x))
 
-{-| borderTopWidth' - shorthand for providing lengths to border-top-width for use with animation.
- Example: borderTopWidth' 10 px 20 px
+{-| borderTopWidth_ - shorthand for providing lengths to border-top-width for use with animation.
+ Example: borderTopWidth_ 10 px 20 px
 -}
-borderTopWidth' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderTopWidth' x f y g = ("border-top-width", serializeLength (f x), serializeLength (g y))
+borderTopWidth_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderTopWidth_ x f y g = ("border-top-width", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderBottomWidth - shorthand for providing lengths to border-bottom-width.
@@ -374,11 +374,11 @@ borderTopWidth' x f y g = ("border-top-width", serializeLength (f x), serializeL
 borderBottomWidth : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderBottomWidth x f = ("border-bottom-width", serializeLength (f x))
 
-{-| borderBottomWidth' - shorthand for providing lengths to border-bottom-width for use with animation.
- Example: borderBottomWidth' 10 px 20 px
+{-| borderBottomWidth_ - shorthand for providing lengths to border-bottom-width for use with animation.
+ Example: borderBottomWidth_ 10 px 20 px
 -}
-borderBottomWidth' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderBottomWidth' x f y g = ("border-bottom-width", serializeLength (f x), serializeLength (g y))
+borderBottomWidth_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderBottomWidth_ x f y g = ("border-bottom-width", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderLeftWidth - shorthand for providing lengths to border-left-width.
@@ -387,11 +387,11 @@ borderBottomWidth' x f y g = ("border-bottom-width", serializeLength (f x), seri
 borderLeftWidth : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderLeftWidth x f = ("border-left-width", serializeLength (f x))
 
-{-| borderLeftWidth' - shorthand for providing lengths to border-left-width for use with animation.
- Example: borderLeftWidth' 10 px 20 px
+{-| borderLeftWidth_ - shorthand for providing lengths to border-left-width for use with animation.
+ Example: borderLeftWidth_ 10 px 20 px
 -}
-borderLeftWidth' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderLeftWidth' x f y g = ("border-left-width", serializeLength (f x), serializeLength (g y))
+borderLeftWidth_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderLeftWidth_ x f y g = ("border-left-width", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderRightWidth - shorthand for providing lengths to border-right-width.
@@ -400,11 +400,11 @@ borderLeftWidth' x f y g = ("border-left-width", serializeLength (f x), serializ
 borderRightWidth : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderRightWidth x f = ("border-right-width", serializeLength (f x))
 
-{-| borderRightWidth' - shorthand for providing lengths to border-right-width for use with animation.
- Example: borderRightWidth' 10 px 20 px
+{-| borderRightWidth_ - shorthand for providing lengths to border-right-width for use with animation.
+ Example: borderRightWidth_ 10 px 20 px
 -}
-borderRightWidth' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderRightWidth' x f y g = ("border-right-width", serializeLength (f x), serializeLength (g y))
+borderRightWidth_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderRightWidth_ x f y g = ("border-right-width", serializeLength (f x), serializeLength (g y))
 
 
 {-| letterSpacing - shorthand for providing lengths to letter-spacing.
@@ -413,11 +413,11 @@ borderRightWidth' x f y g = ("border-right-width", serializeLength (f x), serial
 letterSpacing : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 letterSpacing x f = ("letter-spacing", serializeLength (f x))
 
-{-| letterSpacing' - shorthand for providing lengths to letter-spacing for use with animation.
- Example: letterSpacing' 10 px 20 px
+{-| letterSpacing_ - shorthand for providing lengths to letter-spacing for use with animation.
+ Example: letterSpacing_ 10 px 20 px
 -}
-letterSpacing' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-letterSpacing' x f y g = ("letter-spacing", serializeLength (f x), serializeLength (g y))
+letterSpacing_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+letterSpacing_ x f y g = ("letter-spacing", serializeLength (f x), serializeLength (g y))
 
 
 {-| textIndent - shorthand for providing lengths to text-indent.
@@ -426,11 +426,11 @@ letterSpacing' x f y g = ("letter-spacing", serializeLength (f x), serializeLeng
 textIndent : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 textIndent x f = ("text-indent", serializeLength (f x))
 
-{-| textIndent' - shorthand for providing lengths to text-indent for use with animation.
- Example: textIndent' 10 px 20 px
+{-| textIndent_ - shorthand for providing lengths to text-indent for use with animation.
+ Example: textIndent_ 10 px 20 px
 -}
-textIndent' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-textIndent' x f y g = ("text-indent", serializeLength (f x), serializeLength (g y))
+textIndent_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+textIndent_ x f y g = ("text-indent", serializeLength (f x), serializeLength (g y))
 
 
 {-| wordSpacing - shorthand for providing lengths to word-spacing.
@@ -439,11 +439,11 @@ textIndent' x f y g = ("text-indent", serializeLength (f x), serializeLength (g 
 wordSpacing : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 wordSpacing x f = ("word-spacing", serializeLength (f x))
 
-{-| wordSpacing' - shorthand for providing lengths to word-spacing for use with animation.
- Example: wordSpacing' 10 px 20 px
+{-| wordSpacing_ - shorthand for providing lengths to word-spacing for use with animation.
+ Example: wordSpacing_ 10 px 20 px
 -}
-wordSpacing' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-wordSpacing' x f y g = ("word-spacing", serializeLength (f x), serializeLength (g y))
+wordSpacing_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+wordSpacing_ x f y g = ("word-spacing", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderRadius - shorthand for providing lengths to border-radius.
@@ -452,11 +452,11 @@ wordSpacing' x f y g = ("word-spacing", serializeLength (f x), serializeLength (
 borderRadius : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderRadius x f = ("border-radius", serializeLength (f x))
 
-{-| borderRadius' - shorthand for providing lengths to border-radius for use with animation.
- Example: borderRadius' 10 px 20 px
+{-| borderRadius_ - shorthand for providing lengths to border-radius for use with animation.
+ Example: borderRadius_ 10 px 20 px
 -}
-borderRadius' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderRadius' x f y g = ("border-radius", serializeLength (f x), serializeLength (g y))
+borderRadius_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderRadius_ x f y g = ("border-radius", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderTopLeftRadius - shorthand for providing lengths to border-top-left-radius.
@@ -465,11 +465,11 @@ borderRadius' x f y g = ("border-radius", serializeLength (f x), serializeLength
 borderTopLeftRadius : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderTopLeftRadius x f = ("border-top-left-radius", serializeLength (f x))
 
-{-| borderTopLeftRadius' - shorthand for providing lengths to border-top-left-radius for use with animation.
- Example: borderTopLeftRadius' 10 px 20 px
+{-| borderTopLeftRadius_ - shorthand for providing lengths to border-top-left-radius for use with animation.
+ Example: borderTopLeftRadius_ 10 px 20 px
 -}
-borderTopLeftRadius' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderTopLeftRadius' x f y g = ("border-top-left-radius", serializeLength (f x), serializeLength (g y))
+borderTopLeftRadius_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderTopLeftRadius_ x f y g = ("border-top-left-radius", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderBottomLeftRadius - shorthand for providing lengths to border-bottom-left-radius.
@@ -478,11 +478,11 @@ borderTopLeftRadius' x f y g = ("border-top-left-radius", serializeLength (f x),
 borderBottomLeftRadius : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderBottomLeftRadius x f = ("border-bottom-left-radius", serializeLength (f x))
 
-{-| borderBottomLeftRadius' - shorthand for providing lengths to border-bottom-left-radius for use with animation.
- Example: borderBottomLeftRadius' 10 px 20 px
+{-| borderBottomLeftRadius_ - shorthand for providing lengths to border-bottom-left-radius for use with animation.
+ Example: borderBottomLeftRadius_ 10 px 20 px
 -}
-borderBottomLeftRadius' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderBottomLeftRadius' x f y g = ("border-bottom-left-radius", serializeLength (f x), serializeLength (g y))
+borderBottomLeftRadius_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderBottomLeftRadius_ x f y g = ("border-bottom-left-radius", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderTopRightRadius - shorthand for providing lengths to border-top-right-radius.
@@ -491,11 +491,11 @@ borderBottomLeftRadius' x f y g = ("border-bottom-left-radius", serializeLength 
 borderTopRightRadius : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderTopRightRadius x f = ("border-top-right-radius", serializeLength (f x))
 
-{-| borderTopRightRadius' - shorthand for providing lengths to border-top-right-radius for use with animation.
- Example: borderTopRightRadius' 10 px 20 px
+{-| borderTopRightRadius_ - shorthand for providing lengths to border-top-right-radius for use with animation.
+ Example: borderTopRightRadius_ 10 px 20 px
 -}
-borderTopRightRadius' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderTopRightRadius' x f y g = ("border-top-right-radius", serializeLength (f x), serializeLength (g y))
+borderTopRightRadius_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderTopRightRadius_ x f y g = ("border-top-right-radius", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderBottomRightRadius - shorthand for providing lengths to border-bottom-right-radius.
@@ -504,11 +504,11 @@ borderTopRightRadius' x f y g = ("border-top-right-radius", serializeLength (f x
 borderBottomRightRadius : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderBottomRightRadius x f = ("border-bottom-right-radius", serializeLength (f x))
 
-{-| borderBottomRightRadius' - shorthand for providing lengths to border-bottom-right-radius for use with animation.
- Example: borderBottomRightRadius' 10 px 20 px
+{-| borderBottomRightRadius_ - shorthand for providing lengths to border-bottom-right-radius for use with animation.
+ Example: borderBottomRightRadius_ 10 px 20 px
 -}
-borderBottomRightRadius' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderBottomRightRadius' x f y g = ("border-bottom-right-radius", serializeLength (f x), serializeLength (g y))
+borderBottomRightRadius_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderBottomRightRadius_ x f y g = ("border-bottom-right-radius", serializeLength (f x), serializeLength (g y))
 
 
 {-| borderWidth - shorthand for providing lengths to border-width.
@@ -517,11 +517,11 @@ borderBottomRightRadius' x f y g = ("border-bottom-right-radius", serializeLengt
 borderWidth : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 borderWidth x f = ("border-width", serializeLength (f x))
 
-{-| borderWidth' - shorthand for providing lengths to border-width for use with animation.
- Example: borderWidth' 10 px 20 px
+{-| borderWidth_ - shorthand for providing lengths to border-width for use with animation.
+ Example: borderWidth_ 10 px 20 px
 -}
-borderWidth' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-borderWidth' x f y g = ("border-width", serializeLength (f x), serializeLength (g y))
+borderWidth_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+borderWidth_ x f y g = ("border-width", serializeLength (f x), serializeLength (g y))
 
 
 {-| bottom - shorthand for providing lengths to bottom.
@@ -530,11 +530,11 @@ borderWidth' x f y g = ("border-width", serializeLength (f x), serializeLength (
 bottom : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 bottom x f = ("bottom", serializeLength (f x))
 
-{-| bottom' - shorthand for providing lengths to bottom for use with animation.
- Example: bottom' 10 px 20 px
+{-| bottom_ - shorthand for providing lengths to bottom for use with animation.
+ Example: bottom_ 10 px 20 px
 -}
-bottom' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-bottom' x f y g = ("bottom", serializeLength (f x), serializeLength (g y))
+bottom_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+bottom_ x f y g = ("bottom", serializeLength (f x), serializeLength (g y))
 
 
 {-| top - shorthand for providing lengths to top.
@@ -543,11 +543,11 @@ bottom' x f y g = ("bottom", serializeLength (f x), serializeLength (g y))
 top : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 top x f = ("top", serializeLength (f x))
 
-{-| top' - shorthand for providing lengths to top for use with animation.
- Example: top' 10 px 20 px
+{-| top_ - shorthand for providing lengths to top for use with animation.
+ Example: top_ 10 px 20 px
 -}
-top' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-top' x f y g = ("top", serializeLength (f x), serializeLength (g y))
+top_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+top_ x f y g = ("top", serializeLength (f x), serializeLength (g y))
 
 
 {-| left - shorthand for providing lengths to left.
@@ -556,11 +556,11 @@ top' x f y g = ("top", serializeLength (f x), serializeLength (g y))
 left : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 left x f = ("left", serializeLength (f x))
 
-{-| left' - shorthand for providing lengths to left for use with animation.
- Example: left' 10 px 20 px
+{-| left_ - shorthand for providing lengths to left for use with animation.
+ Example: left_ 10 px 20 px
 -}
-left' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-left' x f y g = ("left", serializeLength (f x), serializeLength (g y))
+left_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+left_ x f y g = ("left", serializeLength (f x), serializeLength (g y))
 
 
 {-| right - shorthand for providing lengths to right.
@@ -569,11 +569,11 @@ left' x f y g = ("left", serializeLength (f x), serializeLength (g y))
 right : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 right x f = ("right", serializeLength (f x))
 
-{-| right' - shorthand for providing lengths to right for use with animation.
- Example: right' 10 px 20 px
+{-| right_ - shorthand for providing lengths to right for use with animation.
+ Example: right_ 10 px 20 px
 -}
-right' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-right' x f y g = ("right", serializeLength (f x), serializeLength (g y))
+right_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+right_ x f y g = ("right", serializeLength (f x), serializeLength (g y))
 
 
 {-| lineHeight - shorthand for providing lengths to line-height.
@@ -582,11 +582,11 @@ right' x f y g = ("right", serializeLength (f x), serializeLength (g y))
 lineHeight : Int -> (Int -> Length) -> (CSSKey,CSSValue)
 lineHeight x f = ("line-height", serializeLength (f x))
 
-{-| lineHeight' - shorthand for providing lengths to line-height for use with animation.
- Example: lineHeight' 10 px 20 px
+{-| lineHeight_ - shorthand for providing lengths to line-height for use with animation.
+ Example: lineHeight_ 10 px 20 px
 -}
-lineHeight' : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
-lineHeight' x f y g = ("line-height", serializeLength (f x), serializeLength (g y))
+lineHeight_ : Int -> (Int -> Length) -> Int -> (Int -> Length) -> (CSSKey,CSSValue,CSSValue)
+lineHeight_ x f y g = ("line-height", serializeLength (f x), serializeLength (g y))
 
 
 
@@ -596,11 +596,11 @@ lineHeight' x f y g = ("line-height", serializeLength (f x), serializeLength (g 
 color : Color -> (CSSKey,CSSValue)
 color x = ("color", cssColor x)
 
-{-| color' - shorthand for providing colors to color for use with animation.
- Example: color' black blue
+{-| color_ - shorthand for providing colors to color for use with animation.
+ Example: color_ black blue
 -}
-color' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-color' x y = ("color", cssColor x, cssColor y)
+color_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+color_ x y = ("color", cssColor x, cssColor y)
 
 
 {-| backgroundColor - shorthand for providing colors to background-color.
@@ -609,11 +609,11 @@ color' x y = ("color", cssColor x, cssColor y)
 backgroundColor : Color -> (CSSKey,CSSValue)
 backgroundColor x = ("background-color", cssColor x)
 
-{-| backgroundColor' - shorthand for providing colors to background-color for use with animation.
- Example: backgroundColor' black blue
+{-| backgroundColor_ - shorthand for providing colors to background-color for use with animation.
+ Example: backgroundColor_ black blue
 -}
-backgroundColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-backgroundColor' x y = ("background-color", cssColor x, cssColor y)
+backgroundColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+backgroundColor_ x y = ("background-color", cssColor x, cssColor y)
 
 
 {-| borderColor - shorthand for providing colors to border-color.
@@ -622,11 +622,11 @@ backgroundColor' x y = ("background-color", cssColor x, cssColor y)
 borderColor : Color -> (CSSKey,CSSValue)
 borderColor x = ("border-color", cssColor x)
 
-{-| borderColor' - shorthand for providing colors to border-color for use with animation.
- Example: borderColor' black blue
+{-| borderColor_ - shorthand for providing colors to border-color for use with animation.
+ Example: borderColor_ black blue
 -}
-borderColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-borderColor' x y = ("border-color", cssColor x, cssColor y)
+borderColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+borderColor_ x y = ("border-color", cssColor x, cssColor y)
 
 
 {-| borderLeftColor - shorthand for providing colors to border-left-color.
@@ -635,11 +635,11 @@ borderColor' x y = ("border-color", cssColor x, cssColor y)
 borderLeftColor : Color -> (CSSKey,CSSValue)
 borderLeftColor x = ("border-left-color", cssColor x)
 
-{-| borderLeftColor' - shorthand for providing colors to border-left-color for use with animation.
- Example: borderLeftColor' black blue
+{-| borderLeftColor_ - shorthand for providing colors to border-left-color for use with animation.
+ Example: borderLeftColor_ black blue
 -}
-borderLeftColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-borderLeftColor' x y = ("border-left-color", cssColor x, cssColor y)
+borderLeftColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+borderLeftColor_ x y = ("border-left-color", cssColor x, cssColor y)
 
 
 {-| borderRightColor - shorthand for providing colors to border-right-color.
@@ -648,11 +648,11 @@ borderLeftColor' x y = ("border-left-color", cssColor x, cssColor y)
 borderRightColor : Color -> (CSSKey,CSSValue)
 borderRightColor x = ("border-right-color", cssColor x)
 
-{-| borderRightColor' - shorthand for providing colors to border-right-color for use with animation.
- Example: borderRightColor' black blue
+{-| borderRightColor_ - shorthand for providing colors to border-right-color for use with animation.
+ Example: borderRightColor_ black blue
 -}
-borderRightColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-borderRightColor' x y = ("border-right-color", cssColor x, cssColor y)
+borderRightColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+borderRightColor_ x y = ("border-right-color", cssColor x, cssColor y)
 
 
 {-| borderTopColor - shorthand for providing colors to border-top-color.
@@ -661,11 +661,11 @@ borderRightColor' x y = ("border-right-color", cssColor x, cssColor y)
 borderTopColor : Color -> (CSSKey,CSSValue)
 borderTopColor x = ("border-top-color", cssColor x)
 
-{-| borderTopColor' - shorthand for providing colors to border-top-color for use with animation.
- Example: borderTopColor' black blue
+{-| borderTopColor_ - shorthand for providing colors to border-top-color for use with animation.
+ Example: borderTopColor_ black blue
 -}
-borderTopColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-borderTopColor' x y = ("border-top-color", cssColor x, cssColor y)
+borderTopColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+borderTopColor_ x y = ("border-top-color", cssColor x, cssColor y)
 
 
 {-| borderBottomColor - shorthand for providing colors to border-bottom-color.
@@ -674,11 +674,11 @@ borderTopColor' x y = ("border-top-color", cssColor x, cssColor y)
 borderBottomColor : Color -> (CSSKey,CSSValue)
 borderBottomColor x = ("border-bottom-color", cssColor x)
 
-{-| borderBottomColor' - shorthand for providing colors to border-bottom-color for use with animation.
- Example: borderBottomColor' black blue
+{-| borderBottomColor_ - shorthand for providing colors to border-bottom-color for use with animation.
+ Example: borderBottomColor_ black blue
 -}
-borderBottomColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-borderBottomColor' x y = ("border-bottom-color", cssColor x, cssColor y)
+borderBottomColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+borderBottomColor_ x y = ("border-bottom-color", cssColor x, cssColor y)
 
 
 {-| outlineColor - shorthand for providing colors to outline-color.
@@ -687,11 +687,11 @@ borderBottomColor' x y = ("border-bottom-color", cssColor x, cssColor y)
 outlineColor : Color -> (CSSKey,CSSValue)
 outlineColor x = ("outline-color", cssColor x)
 
-{-| outlineColor' - shorthand for providing colors to outline-color for use with animation.
- Example: outlineColor' black blue
+{-| outlineColor_ - shorthand for providing colors to outline-color for use with animation.
+ Example: outlineColor_ black blue
 -}
-outlineColor' : Color -> Color -> (CSSKey,CSSValue,CSSValue)
-outlineColor' x y = ("outline-color", cssColor x, cssColor y)
+outlineColor_ : Color -> Color -> (CSSKey,CSSValue,CSSValue)
+outlineColor_ x y = ("outline-color", cssColor x, cssColor y)
 
 
 {-| BorderStyle - static type enumeration
@@ -794,10 +794,10 @@ textJustify = ("text-align","justify")
 opacity : Float -> (CSSKey,CSSValue)
 opacity x = ("opacity",toString x)
 
-{-| opacity' - two-state opacity for animation. Example: opacity' 0.5 1.0
+{-| opacity_ - two-state opacity for animation. Example: opacity_ 0.5 1.0
 -}
-opacity' : Float -> Float -> (CSSKey,CSSValue,CSSValue)
-opacity' x y = ("opacity",toString x,toString y)
+opacity_ : Float -> Float -> (CSSKey,CSSValue,CSSValue)
+opacity_ x y = ("opacity",toString x,toString y)
 
 {-| borderStyle - optional border style. Example: borderStyle solid
 -}
